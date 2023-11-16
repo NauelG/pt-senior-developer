@@ -1,92 +1,80 @@
-# PT Senior Developer
+# Prova Técnica Senior Developer
+
+<div align="center">
+  <a href="http://re7systems.com/" target="blank"><img src="https://www.re7systems.com/wp-content/uploads/2020/04/Recurso-4@5x.png" width="200" alt="Re7Systems" /></a>
+</div>
 
 
+La present prova té per objectiu avaluar les capacitats tècniques i competències del candidat per a la vacant de Senior Full Stack Developer.
 
-## Getting started
+El test està compost per 10 preguntes curtes en diferents llenguatges.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Com resoldre:
+- Clonar el repositori.
+- Crear una carpeta `src` que contingui una subcarpeta per cada pregunta.
+- Acompanyar cada exercici resolt amb un arxiu `README.md` que amb l'explicació del desenvolupament.
+- Fer un *commit* per cada pregunta resolta.
+- Empaquetar el resultat en un arxiu `re7systems.bundle` amb la comanda `git bundle create re7systems.bundle --all`.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+## Preguntes
 
-## Add your files
+### 1. Javascript - Algoritmia
+Escriu un funció en *JavaScript* que rebi un número sencer com a paràmeter d'entrada i retorni `true` si el número és primer i `false` si no ho és.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+### 2. TypeScript - Manipulació de Dades
+Utilitzant TypeScript, crea una interfície que defineixi l'estructura d'un objecte **Producte** amb propietats com ara nom, preu i descripció. Després, crea una funció que prengui un array de productes i retorni el producte més car.
 
-```
-cd existing_repo
-git remote add origin https://lyra.re7systems.com/rrhh/pt-senior-developer.git
-git branch -M main
-git push -uf origin main
-```
+### 3. Modelatge de Base de Dades
+Dissenyau un esquema de base de dades a MySQL per a una aplicació de botiga en línia que inclogui taules per a productes, categories i comandes. Especifica les relacions entre les taules.
 
-## Integrate with your tools
+### 4. JavaScript - Rendering Eficient amb Virtual DOM
+Imagina que treballes en una aplicació web complexa que mostra una gran quantitat de dades dinàmiques. Com abordaries l'optimització del rendiment del rendering utilitzant la tècnica del Virtual DOM? Proporciona un exemple pràctic de com implementaries aquesta tècnica en JavaScript per minimitzar les actualitzacions innecessàries del DOM i millorar el rendiment general de la teva aplicació.
 
-- [ ] [Set up project integrations](https://lyra.re7systems.com/rrhh/pt-senior-developer/-/settings/integrations)
+### 5. TypeScript - Ús de Tipus Genèrics
+Escriu una funció a TypeScript que prengui un array d'elements i retorni l'últim element de l'array. Utilitza tipus genèrics perquè la funció sigui flexible i funcioni amb diferents tipus d'elements.
 
-## Collaborate with your team
+### 6. Angular
+Explica com implementaries l'ús del "Lazy Loading" en una aplicació Angular per millorar el rendiment i l'experiència de l'usuari. Proporciona un exemple pràctic de com estructuraries els mòduls i les rutes per aconseguir el "Lazy Loading" en diferents parts de l'aplicació. Destaca els avantatges d'aquesta tècnica i com contribueix a l'eficiència del càrrega de la pàgina.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+### 7. JavaScript - Algorisme de cerca
+Implementa un algorisme de cerca binària en JavaScript per trobar un element en un array ordenat. La funció ha de retornar la posició de l'element si es troba o -1 si no està present.
 
-## Test and Deploy
+### 8. NestJS
+Imagina que estàs treballant en un projecte Nest.js que requereix una manipulació extensa de les dades entrants i sortints. Com implementaries interceptors i pipes de manera avançada per aconseguir un codi modular i mantenible?
 
-Use the built-in continuous integration in GitLab.
+Explica com podríem utilitzar interceptors per manipular les respostes HTTP i els pipes per validar i transformar les dades d'entrada. Proporciona exemples específics de com implementaries interceptors i pipes personalitzats per gestionar casos com l'autenticació, la validació de dades o la gestió d'errors. Aborda la manera com aquests elements poden ser reutilitzats en tota l'aplicació per millorar la consistència i la facilitat de manteniment del codi.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### 9. TypeORM i TypeScript - Gestió de Relacions
 
-***
+Considera un sistema de gestió de llibres amb les següents entitats: `Llibre`, `Autor` i `Editorial`. Utilitza TypeORM i TypeScript per gestionar les relacions entre aquestes entitats.
 
-# Editing this README
+Defineix les Entitats:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+`Llibre` amb les propietats: `id`, `titol`, `preu` i `autor`.
+`Autor` amb les propietats: `id`, `nom` i `llibres` (relació amb molts llibres).
+`Editorial` amb les propietats: `id`, `nom` i `llibres` (relació amb molts llibres).
+Configura les Relacions:
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Estableix una relació many-to-one entre Llibre i Autor.
+Estableix una relació many-to-one entre Llibre i Editorial.
+Crea una Consulta Avançada:
 
-## Name
-Choose a self-explaining name for your project.
+Implementa una consulta que recuperi tots els llibres d'un autor específic juntament amb la informació de l'autor i l'editorial associats.
+Gestiona la Consulta Eficientment:
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Utilitza precàrrega (eager loading) per minimitzar el nombre de consultes realitzades i optimitzar el rendiment.
+Extra:
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Proporciona el codi TypeScript que implementa aquesta configuració i consultes. Aborda detalls com l'ús de decoradors de TypeORM, les opcions de relació i qualsevol altra configuració rellevant.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### 10. PHP - Manipulació Avançada d'Arrays
+Crea una funció en PHP que rebi com a paràmetre un array associatiu de tasques, on cada tasca té les següents propietats: `id`, `títol`, `descripció` i `estat` (pendent o completada).
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+1. Filtra les Tasques:
+   Implementa una funció que, donat l'array de tasques, filtri només les tasques completades.
+2. Ordena les Tasques:
+   Implementa una altra funció que, donat l'array de tasques, les ordeni per data de creació de manera descendent.
+3. Obté Estadístiques: 
+   Crea una funció que, donat l'array de tasques, calculi i imprimeixi el nombre total de tasques, així com el nombre de tasques pendents i completades.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Proporciona el codi PHP que implementa aquesta manipulació avançada d'arrays amb les funcionalitats mencionades. Aborda detalls com la utilització d'iteradors, funcions de manipulació d'arrays i la gestió de les estadístiques.
